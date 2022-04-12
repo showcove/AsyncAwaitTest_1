@@ -43,6 +43,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         imageViews = [imageView1, imageView2, imageView3, imageView4, imageView5, imageView6, imageView7, imageView8, imageView9]
+        
+        for imageView in imageViews {
+            imageView.layer.borderWidth = 1.5
+            imageView.layer.borderColor = UIColor.lightGray.cgColor
+        }
     }
     
     func waitAndReturnDelay(_ delay: TimeInterval) async -> TimeInterval {
